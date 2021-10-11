@@ -10,9 +10,15 @@ function OpenCon()
  return $conn;
  }
 
+$query = mysqil_fetch($conn, "SELECT * FORM tbl_articles");
+while($row = mysqil_fetch_assoc($query))
+{
+  $title = $row['title'];
+  $content = $row['content'];
+}
+
 function CloseCon($conn)
  {
  $conn -> close();
  }
-
 ?>
