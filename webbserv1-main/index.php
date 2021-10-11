@@ -1,6 +1,7 @@
 <?php
-include_once("/header.php");
- ?>
+// Some includes for header and connection to database
+  include_once("/header.php");
+?>
 
     <body data-spy="scroll" data-target=".navbar" data-offset="51">
         <!-- Nav Bar Start -->
@@ -21,8 +22,8 @@ include_once("/header.php");
                         <a href="price.html" class="nav-item nav-link">Price</a>
                         <a href="review.html" class="nav-item nav-link">Review</a>
                         <a href="team.html" class="nav-item nav-link">Team</a>
-                        <a href="blog.html" class="nav-item nav-link">Blog</a>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="#blog" class="nav-item nav-link">Blog</a>
+                        <a href="#contact" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
             </div>
@@ -38,7 +39,7 @@ include_once("/header.php");
                         <div class="hero-content">
                             <div class="hero-text">
                                 <p>This is</p>
-                                <h1>Android Robot</h1>
+                                <h1><?php echo $title; ?></h1>
                                 <h2></h2>
                                 <div class="typed-text">Cool Features, Coffee Drinker, Awesome As F***, Shit Happens, Learn HTML Kids</div>
                             </div>
